@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Web
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracker", "TimeTracker\TimeTracker.csproj", "{2AB2BA8C-5967-4D4D-86D8-39E9C91754A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{047E122D-881B-44BC-A5C7-3186B33CCF08} = {047E122D-881B-44BC-A5C7-3186B33CCF08}
+		{F224E55F-81BC-4CAB-BB75-255239C4598F} = {F224E55F-81BC-4CAB-BB75-255239C4598F}
+		{9F020460-EEA9-40C1-AAB6-367BC6D9295E} = {9F020460-EEA9-40C1-AAB6-367BC6D9295E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracker.Interface", "TimeTracker.Interface\TimeTracker.Interface.csproj", "{047E122D-881B-44BC-A5C7-3186B33CCF08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracker.Models", "TimeTracker.Models\TimeTracker.Models.csproj", "{9F020460-EEA9-40C1-AAB6-367BC6D9295E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracker.Concrete", "TimeTracker.Concrete\TimeTracker.Concrete.csproj", "{F224E55F-81BC-4CAB-BB75-255239C4598F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AB2BA8C-5967-4D4D-86D8-39E9C91754A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB2BA8C-5967-4D4D-86D8-39E9C91754A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB2BA8C-5967-4D4D-86D8-39E9C91754A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB2BA8C-5967-4D4D-86D8-39E9C91754A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047E122D-881B-44BC-A5C7-3186B33CCF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047E122D-881B-44BC-A5C7-3186B33CCF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047E122D-881B-44BC-A5C7-3186B33CCF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047E122D-881B-44BC-A5C7-3186B33CCF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F020460-EEA9-40C1-AAB6-367BC6D9295E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F020460-EEA9-40C1-AAB6-367BC6D9295E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F020460-EEA9-40C1-AAB6-367BC6D9295E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F020460-EEA9-40C1-AAB6-367BC6D9295E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F224E55F-81BC-4CAB-BB75-255239C4598F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F224E55F-81BC-4CAB-BB75-255239C4598F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F224E55F-81BC-4CAB-BB75-255239C4598F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F224E55F-81BC-4CAB-BB75-255239C4598F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
