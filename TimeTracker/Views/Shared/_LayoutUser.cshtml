@@ -95,67 +95,6 @@
                 <script src="~/Scripts/jquery.signalR-2.2.3.min.js"></script>
                 <script src="~/signalr/Hubs/"></script>
 
-                <script>
-                    $(document).ready(function ()
-                    {
-                        toastr.options.onCloseClick = function () { alert("welcome"); };
-                        // Proxy created on the fly
-                        var hub = $.connection.mynotificationHub;
-
-                        // Declare a function on the hub hub so the server can invoke it
-                        hub.client.displayStatus = function () {
-                            getData();
-                        };
-
-                        // Start the connection
-                        $.connection.hub.start();
-                        getData();
-
-                        function getData() {
-                            var divNotificaion = $('#divNotificaion');
-                            $.ajax({
-                                url: '/Notification/GetNotification',
-                                type: 'GET',
-                                datatype: 'json',
-                                success: function (data) {
-                                    data = $.parseJSON(data);
-                                    if (data.length > 0) 
-                                    {
-                                        
-                                        toastr.options =
-                                        {
-                                            "closeButton": true,
-                                            "debug": false,
-                                            "newestOnTop": false,
-                                            "progressBar": true,
-                                            "positionClass": "toast-top-center",
-                                            "preventDuplicates": false,
-                                            "onclick": null,
-                                            "showDuration": "300",
-                                            "hideDuration": "1000",
-                                            "timeOut": 0,
-                                            "extendedTimeOut": 0,
-                                            "showEasing": "swing",
-                                            "hideEasing": "linear",
-                                            "showMethod": "fadeIn",
-                                            "hideMethod": "fadeOut",
-                                            "tapToDismiss": false
-                                        }
-                                        for (var i = 0; i < data.length; i++)
-                                        {
-                                            toastr.error(data[i].Message, "Message");
-                                        }                                        
-                                    }
-                                }, error: function (r, e, w) 
-                                {
-
-                                }
-                            });
-
-                           
-                        }
-                    })
-                </script>
                 @RenderBody()
             </div>
         </div>

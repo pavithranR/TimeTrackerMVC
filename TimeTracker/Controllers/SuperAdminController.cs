@@ -96,7 +96,6 @@ namespace TimeTracker.Controllers
         [HttpPost]
         public ActionResult CreateAdmin(Registration registration)
         {
-
             try
             {
                 var isUsernameExists = _IRegistration.CheckUserNameExists(registration.Username);
